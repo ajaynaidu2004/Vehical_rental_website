@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Vehicle Rental Service</h1>
+        <nav>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#booking">Book Now</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Rent Your Favorite Vehicle Today</h2>
+        <p>Affordable, easy & reliable vehicle rental service.</p>
+        <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <!-- Vehicle Listing -->
+    <section id="vehicles">
+        <h2>Available Vehicles</h2>
+        <div class="vehicle-container">
+            <div class="vehicle">
+                <img src="images/car1.jpg" alt="Car">
+                <h3>Sedan - Toyota Camry</h3>
+                <p>$40/day</p>
+                <button class="rent-btn" data-vehicle="Toyota Camry">Rent Now</button>
+            </div>
+            <div class="vehicle">
+                <img src="images/bike1.jpg" alt="Bike">
+                <h3>Sport Bike - Yamaha R1</h3>
+                <p>$20/day</p>
+                <button class="rent-btn" data-vehicle="Yamaha R1">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book a Vehicle</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="vehicle">Vehicle:</label>
+            <select id="vehicle">
+                <option value="Toyota Camry">Toyota Camry</option>
+                <option value="Yamaha R1">Yamaha R1</option>
+            </select>
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" min="1" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+        <p id="bookingMessage"></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@vehiclerental.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
